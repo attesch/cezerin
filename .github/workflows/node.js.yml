@@ -27,3 +27,8 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
+      
+    - name: ZAP Scan
+      uses: zaproxy/action-baseline@v0.3.0
+      with:
+        target: 'https://www.zaproxy.org'
