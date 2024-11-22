@@ -1,0 +1,23 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: lodash-es
+    versions:
+    - 4.17.20
+  - dependency-name: lint-staged
+    versions:
+    - 10.5.3
+  - dependency-name: lodash
+    versions:
+    - 4.17.20
+  - dependency-name: react-scroll
+    versions:
+    - 1.8.1
+  - dependency-name: elliptic
+    versions:
+    - 6.5.3
